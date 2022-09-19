@@ -141,6 +141,27 @@ do
 Console.WriteLine($"Ora la somma totale è di {thisOtherSum}");
 
 
+//snack10
+Random rand = new Random();
+Console.WriteLine("Quanti array devo creare?");
+int arrayQuantity = Convert.ToInt32(Console.ReadLine());
+int currentQuantity = 0;
+while (currentQuantity < arrayQuantity)
+{
+    int[] newArray = new int[10];
+    for (int i = 0; i < 10; i++)
+    {
+        int newRndNumb = rand.Next(1, 100);
+        newArray[i] = newRndNumb;
+        Console.Write(newRndNumb);
+        Console.Write(" ");
+    }
+    Console.WriteLine();
+    currentQuantity++;
+}
+Console.WriteLine($"Ho creato {arrayQuantity} array di 10 elementi ciascuno");
+
+
 //snack12
 //Scrivere una funzione per verificare se un numero è pari o dispari.
 //Quindi chiedere un numero all'utente e comunicargli se è pari o dispari.
